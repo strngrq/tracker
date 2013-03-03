@@ -1,0 +1,18 @@
+<head>
+  <title>Простой трекер</title>
+</head>
+
+<body>
+
+  {{> tickets_list}}
+</body>
+
+<template name="tickets_list">
+  <h1>Список открытых тикетов</h1>
+  <table>
+  {{#each tickets}}
+	<tr>
+		<td><span class="row">{{text}}</span></td><td>---</td>
+	</tr>
+  {{/each}}
+</template>
